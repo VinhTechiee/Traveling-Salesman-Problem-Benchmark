@@ -1,6 +1,4 @@
 # Traveling-Salesman-Problem-Benchmark
-=======
-# Traveling Salesman Problem Benchmark
 
 This repository provides an experimental benchmark of several algorithms used to solve the **Traveling Salesman Problem (TSP)**. The goal of this project is to analyze the **trade-off between runtime performance and solution quality** across different approaches.
 
@@ -120,6 +118,30 @@ This visualization highlights the engineering trade-off between **speed and accu
 
 ---
 
+## Algorithm Visualization
+
+### Nearest Neighbor Tour Construction
+
+![Nearest Neighbor Animation](tsp_nn_demo.gif)
+
+### Nearest Neighbor + 2-opt Refinement
+
+![2-opt Animation](tsp_nn_2opt_demo.gif)
+
+These animations illustrate how the greedy heuristic constructs a tour and how the **2-opt local search** improves the route.
+
+---
+
+## Interactive Benchmark Dashboard
+
+An interactive dashboard is available in:
+
+benchmark_dashboard.html
+
+It allows exploration of runtime scalability, solution quality, and optimization improvements across algorithms.
+---
+
+
 # Benchmark Summary
 
 | Observation | Result |
@@ -160,10 +182,17 @@ Traveling-Salesman-Problem-Benchmark
 ├── main.cpp
 │
 ├── plot_results.py
-├── results.csv
+├── generate_tsp_animation.py
+├── benchmark_dashboard.py
 │
+├── results.csv
 ├── benchmark_summary.csv
 ├── benchmark_readme_table.csv
+│
+├── tsp_nn_demo.gif
+├── tsp_nn_2opt_demo.gif
+│
+├── benchmark_dashboard.html
 │
 ├── 01_runtime_scalability.png
 ├── 02_solution_quality.png
@@ -172,7 +201,7 @@ Traveling-Salesman-Problem-Benchmark
 ├── 05_tradeoff_runtime_vs_quality.png
 ├── 06_solution_stability.png
 │
-└── tsm.pdf
+└── README.md
 ```
 
 ---
@@ -252,4 +281,5 @@ The benchmark demonstrates that combining greedy heuristics with local optimizat
 
 ## Author
 **Le Hien Vinh**  
+
 Ho Chi Minh City University of Technology
