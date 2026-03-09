@@ -136,7 +136,9 @@ These animations illustrate how the greedy heuristic constructs a tour and how t
 
 An interactive dashboard is available in:
 
+```text
 benchmark_dashboard.html
+```
 
 It allows exploration of runtime scalability, solution quality, and optimization improvements across algorithms.
 ---
